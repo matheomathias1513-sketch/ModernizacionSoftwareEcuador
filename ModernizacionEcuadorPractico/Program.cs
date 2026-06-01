@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModernizacionEcuadorPractico.Formulario;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace ModernizacionEcuadorPractico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmAdmin());
         }
     }
 }
