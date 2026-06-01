@@ -18,7 +18,9 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Restaurar paquetes NuGet
-      run: nuget restore ModernizacionEcuadorPractico/ModernizacionEcuadorPractico.sln
+      # Apuntamos directamente al archivo .csproj
+      run: nuget restore ModernizacionEcuadorPractico/ModernizacionEcuadorPractico.csproj
 
     - name: Compilar el proyecto
-      run: msbuild ModernizacionEcuadorPractico/ModernizacionEcuadorPractico.sln /p:Configuration=Release
+      # Compilamos directamente el archivo .csproj
+      run: msbuild ModernizacionEcuadorPractico/ModernizacionEcuadorPractico.csproj /p:Configuration=Release
